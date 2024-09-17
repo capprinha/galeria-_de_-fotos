@@ -1,0 +1,79 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+body{
+    background-color: #fff;
+}
+header{
+    display: flex;
+    justify-content: center;
+    text-transform: uppercase;
+    font-style: italic;
+    padding: 30px 0;
+    background-color: rebeccapurple;
+    border-bottom: 20px solid rgb(60, 29, 90);
+    color: white;
+}
+header h1{
+    padding-right: 25px;
+}
+form{
+    justify-content:center;
+    text-align: center;
+    display: none;
+    padding:25px 0px;
+
+}    
+input, button{
+    padding: 12px;
+    margin-right: 2px;
+    border-radius: 10px;
+}
+button{
+    background-color: green;
+    border: none;
+    outline: none;
+    color: white;
+    font-weight: bold;
+}
+button:hover{
+    background-color: rgb(0, 110, 0);
+}
+#btn_cancel{
+    background-color: rgb(200, 0, 0);
+}
+ul{
+    display: flex;
+    flex-wrap: wrap;
+}
+ul li{
+    max-width: 25%;
+    list-style: none;
+    position: relative;
+    max-height: 280px;
+    overflow-y: hidden;
+}
+ul li img{
+    width: 100%;
+}
+.overlay_imagem_link{
+    padding: 16px;
+    background-color:rgba(0, 0, 0,0.7 ) ;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    opacity: 0;
+    transition: all ease 1s;
+}
+
+.overlay_imagem_link a{
+    color: #fff;
+    text-decoration: none;
+}
+ul li:hover .overlay_imagem_link{
+    opacity: 1;
+}
